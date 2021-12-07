@@ -53,8 +53,8 @@ p {
 }
 
 body {
-  background: linear-gradient(40deg, #202b67 0%, #202b67 85%, #ff875d 90%) !important;
-  height: 3500px;
+  background: linear-gradient(40deg, #202b67 0%, #202b67 89%, #ff875d 90%) !important;
+  height: 3700px;
   background-attachment: fixed;
 }
 
@@ -119,4 +119,28 @@ nav ul li {
 **********************/
 footer {
   margin-top: 150px;
+}
+
+/************************************/
+/* Responsive */
+/**********************************/
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+  body {
+    background: linear-gradient(40deg, #202b67 0%, #202b67 92%, #ff875d 99%) !important;
+    height: 4300px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  body {
+    background: linear-gradient(40deg, #202b67 0%, #202b67 97%, #ff875d 99%) !important;
+    height: 4500px;
+  }
+
+  nav {
+    display: none !important;
+  }
 }
