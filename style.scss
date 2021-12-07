@@ -64,7 +64,7 @@ body {
     $darkBlue 85%,
     $orangeCustom 90%
   ) !important;
-  height: 3300px;
+  height: 3500px;
   background-attachment: fixed;
 }
 
@@ -127,5 +127,9 @@ nav ul li {
 }
 
 /**********************
-***** EXPERIENCE ***
+***** FOOTER ***
 **********************/
+
+footer {
+  margin-top: 150px;
+}
