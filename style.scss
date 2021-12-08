@@ -42,7 +42,6 @@ h2 {
   font-family: "Dancing Script", cursive;
   font-weight: bold;
   color: $orangeCustom;
-
   padding: 5px 0px;
   font-size: 2em;
 }
@@ -61,11 +60,11 @@ body {
   background: linear-gradient(
     33deg,
     $darkBlue 0%,
-    $darkBlue 91%,
+    $darkBlue 87%,
     $orangeCustom 94%
   ) !important;
-  height: 3700px;
-  background-attachment: fixed;
+  height: 100%;
+  background-attachment: scroll;
 }
 
 /**********************
@@ -75,6 +74,13 @@ body {
 nav ul li {
   width: 20%;
   height: 100px;
+  a {
+    margin-top: 15px;
+  }
+}
+
+.navbar-toggler {
+  color: $orangeCustom;
 }
 
 /**********************
@@ -131,29 +137,38 @@ nav ul li {
 **********************/
 
 footer {
-  margin-top: 150px;
+  margin-top: 75px;
+  p {
+    font-size: 0.7rem;
+  }
 }
+/**********************
+***** TEXT ANIMATION ***
+**********************/
 
 /************************************/
 /* Responsive */
 /**********************************/
 
-@media screen and (min-width: 650px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   body {
     background: linear-gradient(
-      40deg,
+      45deg,
       $darkBlue 0%,
-      $darkBlue 92%,
+      $darkBlue 90%,
       $orangeCustom 95%
     ) !important;
-    height: 4300px;
   }
-  nav ul li a {
-    font-size: 0.9rem;
+  nav ul li {
+    height: 50px;
+    a {
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   body {
     background: linear-gradient(
       40deg,
@@ -161,9 +176,19 @@ footer {
       $darkBlue 94%,
       $orangeCustom 97%
     ) !important;
-    height: 4500px;
   }
-  nav {
-    display: none !important;
+
+  nav ul {
+    li {
+      height: 55px;
+      background-color: $orangeCustom;
+      width: 40%;
+    }
+    a {
+      font-size: 1rem;
+      color: $darkBlue !important;
+      margin-top: 0px !important;
+      padding-top: 15px !important;
+    }
   }
 }

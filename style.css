@@ -53,9 +53,9 @@ p {
 }
 
 body {
-  background: linear-gradient(33deg, #202b67 0%, #202b67 91%, #ff875d 94%) !important;
-  height: 3700px;
-  background-attachment: fixed;
+  background: linear-gradient(33deg, #202b67 0%, #202b67 87%, #ff875d 94%) !important;
+  height: 100%;
+  background-attachment: scroll;
 }
 
 /**********************
@@ -64,6 +64,13 @@ body {
 nav ul li {
   width: 20%;
   height: 100px;
+}
+nav ul li a {
+  margin-top: 15px;
+}
+
+.navbar-toggler {
+  color: #ff875d;
 }
 
 /**********************
@@ -118,29 +125,45 @@ nav ul li {
 ***** FOOTER ***
 **********************/
 footer {
-  margin-top: 150px;
+  margin-top: 75px;
+}
+footer p {
+  font-size: 0.7rem;
 }
 
+/**********************
+***** TEXT ANIMATION ***
+**********************/
 /************************************/
 /* Responsive */
 /**********************************/
-@media screen and (min-width: 650px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   body {
-    background: linear-gradient(40deg, #202b67 0%, #202b67 92%, #ff875d 95%) !important;
-    height: 4300px;
+    background: linear-gradient(45deg, #202b67 0%, #202b67 90%, #ff875d 95%) !important;
   }
 
+  nav ul li {
+    height: 50px;
+  }
   nav ul li a {
     font-size: 0.9rem;
+    margin-top: 5px;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   body {
     background: linear-gradient(40deg, #202b67 0%, #202b67 94%, #ff875d 97%) !important;
-    height: 4500px;
   }
 
-  nav {
-    display: none !important;
+  nav ul li {
+    height: 55px;
+    background-color: #ff875d;
+    width: 40%;
+  }
+  nav ul a {
+    font-size: 1rem;
+    color: #202b67 !important;
+    margin-top: 0px !important;
+    padding-top: 15px !important;
   }
 }
