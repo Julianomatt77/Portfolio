@@ -188,7 +188,7 @@ footer p {
 }
 @media screen and (max-width: 768px) {
   body {
-    background: linear-gradient(40deg, #202b67 0%, #202b67 94%, #ff875d 97%) !important;
+    background: linear-gradient(40deg, #202b67 0%, #202b67 96%, #ff875d 99%) !important;
   }
 
   nav ul li {
@@ -204,6 +204,6 @@ footer p {
   }
 
   #presentation .container {
-    margin-top: 175px;
+    margin-top: 85px;
   }
 }
