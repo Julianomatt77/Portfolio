@@ -55,7 +55,6 @@ p {
 body {
   background: linear-gradient(33deg, #202b67 0%, #202b67 87%, #ff875d 94%) !important;
   height: 100%;
-  background-attachment: scroll;
 }
 
 /**********************
@@ -122,6 +121,43 @@ nav ul li a {
 }
 
 /**********************
+***** EXPERIENCE ***
+**********************/
+.step {
+  position: relative;
+  width: 100%;
+  width: calc(100% - 20px);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  text-align: left;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.step::before {
+  content: "";
+  height: calc(100% + 20px);
+  width: 5px;
+  background: #ff875d;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+}
+
+.step::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ff875d;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+
+/**********************
 ***** FOOTER ***
 **********************/
 footer {
@@ -165,5 +201,9 @@ footer p {
     color: #202b67 !important;
     margin-top: 0px !important;
     padding-top: 15px !important;
+  }
+
+  #presentation .container {
+    margin-top: 175px;
   }
 }
