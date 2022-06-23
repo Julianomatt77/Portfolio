@@ -120,6 +120,11 @@ nav ul li a {
   text-decoration: underline;
 }
 
+.logo {
+  height: 50px;
+  width: 70px;
+}
+
 /**********************
 ***** EXPERIENCE ***
 **********************/
@@ -170,6 +175,16 @@ footer p {
 /**********************
 ***** TEXT ANIMATION ***
 **********************/
+/**********************
+***** COOKIE BANNER ***
+**********************/
+.cookiebanner {
+  border: 1px solid #ff875d;
+  padding: 10px 10px 5px 0px !important;
+  margin: 0px 10px 0px 10px !important;
+  background-color: #202b67 !important;
+}
+
 /************************************/
 /* Responsive */
 /**********************************/
