@@ -170,3 +170,25 @@ a:visited {
   color: white;
   text-decoration: none;
 }
+
+/*************************** STROKE *************************/
+svg text {
+  letter-spacing: 10px;
+  stroke: #ff875d;
+  font-size: 2rem;
+  stroke-width: 3;
+  animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: #eefbfb;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189deg, 68%, 75%, 0);
+  }
+}
