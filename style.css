@@ -69,7 +69,12 @@ nav ul li a {
 }
 
 .navbar-toggler {
-  color: #ff875d;
+  color: #ff875d !important;
+  border: #ff875d !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 135, 93, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 /**********************
@@ -185,6 +190,16 @@ footer p {
   background-color: #202b67 !important;
 }
 
+/**************
+******** CHEVRON UP *******
+*******************/
+.fa-chevron-up {
+  position: fixed;
+  top: 90%;
+  right: 3%;
+  border: 3px solid #ff875d !important;
+}
+
 /************************************/
 /* Responsive */
 /**********************************/
@@ -210,6 +225,7 @@ footer p {
     height: 55px;
     background-color: #ff875d;
     width: 40%;
+    border: 1px dotted #202b67;
   }
   nav ul a {
     font-size: 1rem;
