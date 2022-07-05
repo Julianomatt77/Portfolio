@@ -14,10 +14,6 @@ $orangeCustom: #ff875d;
 .button {
 	background: $darkBlue;
 	background-size: 100%;
-	// background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, $darkBlue), color-stop(100%, $lightBlue));
-	// background-image: -moz-linear-gradient(left, $darkBlue, #0aa0f6);
-	// background-image: -webkit-linear-gradient(left, $darkBlue, #0aa0f6);
-	// background-image: linear-gradient(to right, $darkBlue, #0aa0f6);
 	-moz-border-radius: 1.5em;
 	-webkit-border-radius: 1.5em;
 	border-radius: 1.5em;
