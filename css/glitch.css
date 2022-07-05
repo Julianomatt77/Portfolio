@@ -173,7 +173,6 @@ a:visited {
 
 /*************************** STROKE *************************/
 svg text {
-  letter-spacing: 10px;
   stroke: #ff875d;
   font-size: 2rem;
   stroke-width: 3;

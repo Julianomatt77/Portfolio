@@ -59,7 +59,7 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<span id="burgerMenu" class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -98,14 +98,14 @@
 			</svg>
 		</h1>
 
-		<section id="presentation" class="my-3" data-aos="fade-down-right" data-aos-duration="1500">
+		<section id="presentation" class="my-3">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-1"></div>
-					<div class="col-lg-5 col-12 text-center">
+					<div class="col-lg-5 col-12 text-center" data-aos="fade-down-right" data-aos-duration="1500">
 						<img id="julien" src="images/photo.JPG" class="rounded-pill img-fluid" alt="Julien Martin" height="300" width="300" />
 					</div>
-					<div class="col-lg-5 col-12 text-center mt-4">
+					<div class="col-lg-5 col-12 text-center mt-4" data-aos="fade-down-left" data-aos-duration="1500">
 						<h2 class="mb-4 lineUp">Développeur Web Fullstack</h2>
 
 						<p>Issue du monde de l'insdustrie j'ai travaillé plus de 15 ans en France, Suisse et Angleterre en tant de concepteur mécanique.</p>
@@ -196,100 +196,97 @@
 			<div class="container text-center">
 				<h2 class="mb-4 blink">Compétences / Technologies</h2>
 				<div class="text-center">
-					<div class="justify-content-center mt-5" data-aos="flip-left" data-aos-duration="1500">
-						<h3>Front-end</h3>
+					<div class="row">
+						<!-- Frontend -->
+						<div class="col-3" data-aos="fade-down-right" data-aos-duration="1500">
+							<h3 class="button">Front-end</h3>
+							<div class="row justify-content-center mb-4">
+								<div class="col-lg-4 mb-4">
+									<img class="logo me-2 mb-3" src="logos/html.png" alt="html5" height="50" width="70" />
+									HTML 5
+								</div>
 
-						<div class="row justify-content-center mb-4">
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/html.png" alt="html5" height="50" width="70" />
-								HTML 5
-							</div>
-
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/css.png" alt="css3" height="50" width="70" />
-								CSS 3
-							</div>
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/sass.png" alt="sass" height="50" width="70" />
-								SASS
-							</div>
-						</div>
-
-						<div class="row justify-content-center mb-4">
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/bootstrap.png" alt="Bootstrap 5" height="50" width="70" />
-								Bootstrap 5
-							</div>
-
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/angular.png" alt="angular" height="50" width="70" />
-								Angular
-							</div>
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/js.png" alt="Javascript" height="50" width="70" />
-								Javascript
-							</div>
-						</div>
-					</div>
-
-					<div class="justify-content-center mt-5" data-aos="flip-right" data-aos-duration="1500">
-						<h3>Back-end</h3>
-						<div class="row justify-content-center mb-4">
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/mysql.png" alt="mySql" height="50" width="70" />
-								MySQL
-							</div>
-
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/php.png" alt="PHP" height="50" width="70" />
-								PHP 8
-							</div>
-
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/symfony.png" alt="symfony" height="50" width="70" />
-								Symfony
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/css.png" alt="css3" height="50" width="70" />
+									CSS 3
+								</div>
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/sass.png" alt="sass" height="50" width="70" />
+									SASS
+								</div>
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/angular.png" alt="angular" height="50" width="70" />
+									Angular
+								</div>
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/bootstrap.png" alt="angular" height="50" width="70" />
+									Bootstrap
+								</div>
 							</div>
 						</div>
 
-						<div class="row justify-content-center mb-4">
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/nodejs.png" alt="NodeJs" height="50" width="70" />
-								NodeJs
+						<!-- Backend -->
+						<div class="col-3" data-aos="flip-left" data-aos-duration="1500">
+							<h3 class="button">Back-end</h3>
+							<div class="row justify-content-center mb-4">
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/mysql.png" alt="mySql" height="50" width="70" />
+									MySQL
+								</div>
+
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/php.png" alt="PHP" height="50" width="70" />
+									PHP 8
+								</div>
+
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/symfony.png" alt="symfony" height="50" width="70" />
+									Symfony
+								</div>
 							</div>
 
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/express.png" alt="Express" height="50" width="70" />
-								ExpressJs
+							<div class="row justify-content-center mb-4">
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/nodejs.png" alt="NodeJs" height="50" width="70" />
+									NodeJs
+								</div>
+
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/express.png" alt="Express" height="50" width="70" />
+									ExpressJs
+								</div>
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/mongodb.png" alt="Express" height="50" width="70" />
+									MongoDb
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="justify-content-center mt-5" data-aos="flip-left" data-aos-duration="1500">
-						<h3>CMS</h3>
-
-						<div class="row justify-content-center mb-4">
-							<div class="col-lg-4">
-								<img class="logo me-2" src="logos/wp.png" alt="Wordpress" height="50" width="70" />
-								Wordpress
+						<!-- CMS -->
+						<div class="col-3" data-aos="flip-right" data-aos-duration="1500">
+							<h3 class="button">CMS</h3>
+							<div class="row justify-content-center mb-4">
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/wp.png" alt="Wordpress" height="50" width="70" />
+									Wordpress
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="justify-content-center mt-5" data-aos="flip-right" data-aos-duration="1500">
-						<h3>Versionning</h3>
-						<div class="row justify-content-center mb-4">
-							<div class="col-lg-4">
-								<!-- <img class="logo me-2" src="logos/wp.png" alt="Wordpress"
-                height="50"
-                width="70" />
-                Github -->
-								<i class="bi bi-github me-2"></i> GitHub
+						<!-- Versionning -->
+						<div class="col-3" data-aos="fade-up-left" data-aos-duration="1500">
+							<h3 class="button">Versionning</h3>
+							<div class="row justify-content-center mb-4">
+								<div class="col-lg-4">
+									<img class="logo me-2 mb-3" src="logos/github.png" alt="GitHub" height="50" width="70" />
+									GitHub
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="justify-content-center mt-5" data-aos="flip-left" data-aos-duration="1500">
-						<h3>Langues</h3>
+					<div class="justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1500">
+						<h3 class="button">Langues</h3>
 						<div class="row justify-content-center mb-4">
 							<div class="col-lg-4">
 								<img class="logo me-2" src="logos/uk.png" alt="UK flag" height="50" width="70" />
@@ -315,16 +312,30 @@
 						<p>Avril 2022 à Juin 2022 :</p>
 					</div>
 
-					<div class="col-lg-8 col-7">
+					<div class="col-lg-7 col-6">
 						<p class="text-start">
 							Développeur Full-Stack chez
 							<a href="https://www.sumseo.com/" target="_blank">Sumseo.</a><br />
 							Développement d'une application de marketing digital (Semwee) à l'aide du stack MEAN (MongoDb, ExpressJs, Angular, NodeJs)
 						</p>
+						<div class="row">
+							<div class="col-lg-3 col-6">
+								<img class="logo me-2 mb-3" src="logos/mongodb.png" alt="Express" height="50" width="70" />
+							</div>
+							<div class="col-lg-3 col-6">
+								<img class="logo me-2 mb-3" src="logos/express.png" alt="Express" height="50" width="70" />
+							</div>
+							<div class="col-lg-3 col-6">
+								<img class="logo me-2 mb-3" src="logos/angular.png" alt="angular" height="50" width="70" />
+							</div>
+							<div class="col-lg-3 col-6">
+								<img class="logo me-2 mb-3" src="logos/nodejs.png" alt="NodeJs" height="50" width="70" />
+							</div>
+						</div>
 					</div>
 				</div>
 
-				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500">
+				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
 					<div class="col-lg-3 col-5">
 						<p>Septembre 2021 à Juin 2022 :</p>
 					</div>
@@ -338,7 +349,7 @@
 					</div>
 				</div>
 
-				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500">
+				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
 					<div class="col-lg-3 col-5">
 						<p>Décembre 2005 à mars 2021 :</p>
 					</div>

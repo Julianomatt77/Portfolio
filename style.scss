@@ -46,6 +46,10 @@ h2 {
 	font-size: 2em;
 }
 
+h3 {
+	text-align: center;
+}
+
 h1 text {
 	font-size: 3em !important;
 }
@@ -88,7 +92,8 @@ body {
 	bottom: 0;
 	left: 0;
 	inset: 0 0 0 0;
-	background: $lightBlue;
+	border: 2px dotted $lightBlue;
+	margin: 0px -10px 0px -10px;
 	border-radius: 15px;
 	z-index: -1;
 	transition: transform 0.3s ease;
@@ -103,9 +108,6 @@ body {
 /**********************
 *****NAV**********
 **********************/
-// nav {
-// 	background-color: $orangeCustom;
-// }
 nav ul li {
 	width: 20%;
 }
@@ -117,6 +119,10 @@ nav ul li {
 
 .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 135, 93, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler-iconBlue {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(32, 43, 103, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 #experienceNav,
@@ -160,6 +166,9 @@ nav ul li {
 /**********************
 ***** PORTFOLIO ***
 **********************/
+#portfolio {
+	overflow: hidden;
+}
 
 #portfolio .container {
 	margin-bottom: 150px;
@@ -171,6 +180,7 @@ nav ul li {
 
 #competences,
 #experience {
+	overflow: hidden;
 	.container {
 		margin-bottom: 150px;
 	}
@@ -193,6 +203,10 @@ nav ul li {
 /**********************
 ***** EXPERIENCE ***
 **********************/
+
+#experience {
+	overflow: hidden;
+}
 
 .step {
 	position: relative;
@@ -285,7 +299,9 @@ footer {
 	body {
 		background: linear-gradient(40deg, $darkBlue 0%, $darkBlue 96%, $orangeCustom 99%) !important;
 	}
-
+	nav {
+		background-color: transparent;
+	}
 	nav ul {
 		li {
 			height: 55px;
@@ -303,5 +319,9 @@ footer {
 
 	#presentation .container {
 		margin-top: 85px;
+	}
+
+	h1 text {
+		font-size: 2em !important;
 	}
 }
