@@ -193,7 +193,7 @@ svg text {
 }
 /********* Blink ************/
 .blink {
-  text-shadow: 0 0 5px #ff875d, 0 0 10px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 30px #ff0000, 0 0 10px #ff875d, 0 0 98px #ff0000;
+  text-shadow: 0 0 5px #ff875d, 0 0 10px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 30px #202b67, 0 0 10px #ff875d, 0 0 98px #202b67;
   animation: blink 2s infinite;
   -webkit-animation: blink 4s infinite;
 }
@@ -204,11 +204,8 @@ svg text {
     text-shadow: none;
   }
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    /*     color: #fccaff;
-      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 40px #ff875d, 0 0 60px #ff0000, 0 0 10px #ff875d, 0 0 98px #ff0000;
-    color: #fff6a9;
+    text-shadow: 0 0 5px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 40px #ff875d, 0 0 60px #202b67, 0 0 10px #ff875d, 0 0 98px #202b67;
+    color: #202b67;
   }
 }
 @keyframes blink {
@@ -217,11 +214,8 @@ svg text {
     text-shadow: none;
   }
   0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    /*     color: #fccaff;
-      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
-    text-shadow: 0 0 5px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 40px #ff875d, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
-    color: #fff6a9;
+    text-shadow: 0 0 5px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 40px #ff875d, 0 0 60px #202b67, 0 0 10px #ff875d, 0 0 98px #202b67;
+    color: #ff875d;
   }
 }
 /***************** Nav buttons ***************/

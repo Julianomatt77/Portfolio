@@ -34,7 +34,7 @@ $orangeCustom: #ff875d;
 * {
 	font-family: "Roboto", sans-serif;
 	color: $orangeCustom !important;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 h1,
@@ -43,10 +43,11 @@ h2 {
 	font-weight: bold;
 	color: $orangeCustom;
 	padding: 5px 0px;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
-h3 {
+h3 a {
+	font-size: 1.4rem;
 	text-align: center;
 }
 
@@ -194,8 +195,6 @@ nav ul li {
 }
 
 .logo {
-	// max-width: 100%;
-	// max-height: 50px;
 	height: 50px;
 	width: 70px;
 }
@@ -294,6 +293,11 @@ footer {
 		}
 	}
 }
+@media screen and (max-width: 1000px) {
+	h3 {
+		font-size: 1.4rem;
+	}
+}
 
 @media screen and (max-width: 768px) {
 	body {
@@ -317,8 +321,16 @@ footer {
 		}
 	}
 
+	#headTitle {
+		margin-top: 10px;
+	}
+	#julien {
+		height: 150px;
+		width: 150px;
+	}
+
 	#presentation .container {
-		margin-top: 85px;
+		margin-top: 0px;
 	}
 
 	h1 text {

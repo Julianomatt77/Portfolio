@@ -30,7 +30,7 @@
 * {
   font-family: "Roboto", sans-serif;
   color: #ff875d !important;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 h1,
@@ -39,10 +39,11 @@ h2 {
   font-weight: bold;
   color: #ff875d;
   padding: 5px 0px;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
-h3 {
+h3 a {
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -287,6 +288,11 @@ footer p {
     margin-top: 5px;
   }
 }
+@media screen and (max-width: 1000px) {
+  h3 {
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     background: linear-gradient(40deg, #202b67 0%, #202b67 96%, #ff875d 99%) !important;
@@ -309,8 +315,17 @@ footer p {
     padding-top: 15px !important;
   }
 
+  #headTitle {
+    margin-top: 10px;
+  }
+
+  #julien {
+    height: 150px;
+    width: 150px;
+  }
+
   #presentation .container {
-    margin-top: 85px;
+    margin-top: 0px;
   }
 
   h1 text {
