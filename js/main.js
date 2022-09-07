@@ -18,9 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	events.forEach((evt) => {
 		window.addEventListener(evt, function () {
-			// let screenWidth = document.documentElement.clientWidth;
+			let screenWidth = document.documentElement.clientWidth;
 			let scrollpos = window.scrollY;
 			// console.log(scrollpos);
+			// console.log(screenWidth);
 			// if (screenWidth > 767) {
 			if (scrollpos > 250) {
 				NAVA.forEach((item) => {

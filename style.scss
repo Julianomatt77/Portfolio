@@ -29,7 +29,7 @@ $lightBlue: #eefbfb;
 
 * {
 	font-family: "Poppins", sans-serif;
-	color: $darkBlue;
+	color: $darkBlue !important;
 }
 
 h1 {
@@ -110,10 +110,10 @@ p {
 nav {
 	position: fixed;
 	top: 0px;
-	right: 0px;
 	left: 0px;
-	height: 50px;
+	height: 45px;
 	z-index: 500;
+	width: 100%;
 }
 /**********************
 ***** PRESENTATION ***
@@ -124,16 +124,10 @@ nav {
 }
 
 .bi-linkedin {
-	font-size: 40px;
+	font-size: 30px;
 }
 .bi-github {
-	font-size: 40px;
-}
-
-#julien {
-	border: solid 14px $darkBlue !important;
-	border-radius: 50% !important;
-	box-shadow: 3px 8px 10px 4px rgb(0 0 0 / 50%);
+	font-size: 30px;
 }
 
 /**********************
@@ -155,7 +149,7 @@ nav {
 	border-radius: 1rem;
 }
 .btn-primary {
-	color: $lightBlue;
+	color: $lightBlue !important;
 	background-color: $darkBlue;
 	border-color: $darkBlue;
 }
@@ -244,17 +238,6 @@ footer {
 /**********************
 ***** COOKIE BANNER ***
 **********************/
-.cookiebanner {
-	border: 1px solid $darkBlue;
-	padding: 10px 10px 5px 0px !important;
-	margin: 0px 10px 0px 10px !important;
-	background-color: $darkBlue !important;
-}
-
-.cookiebanner span,
-.cookiebanner div {
-	color: $lightBlue;
-}
 
 /**************
 ******** CHEVRON UP *******
@@ -263,7 +246,7 @@ footer {
 .fa-chevron-up {
 	position: fixed;
 	top: 90%;
-	right: 3%;
+	left: 5%;
 	border: 3px solid $darkBlue !important;
 }
 
@@ -278,6 +261,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+	html,
+	html body,
+	body {
+		width: 100% !important;
+		min-width: 0 !important;
+		max-width: none !important;
+		overflow-x: hidden;
+	}
 	#headTitle {
 		margin-top: 80px;
 	}
@@ -297,9 +288,5 @@ footer {
 
 	#portfolio .container {
 		margin-bottom: 60px;
-	}
-
-	.fa-chevron-up {
-		right: 10%;
 	}
 }
