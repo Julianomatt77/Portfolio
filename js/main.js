@@ -18,27 +18,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	events.forEach((evt) => {
 		window.addEventListener(evt, function () {
-			let screenWidth = document.documentElement.clientWidth;
-			console.log(screenWidth);
+			// let screenWidth = document.documentElement.clientWidth;
 			let scrollpos = window.scrollY;
-			if (screenWidth > 767) {
-				if (scrollpos > 250) {
-					NAVA.forEach((item) => {
-						item.classList.add("lightBlue");
-					});
+			// console.log(scrollpos);
+			// if (screenWidth > 767) {
+			if (scrollpos > 250) {
+				NAVA.forEach((item) => {
+					item.classList.add("lightBlue");
+					item.classList.add("titleScrolled");
+				});
 
-					NAV.forEach((item) => {
-						item.classList.add("bg-dark");
-					});
-				} else {
-					NAVA.forEach((item) => {
-						item.classList.remove("ligghtBlue");
-					});
-					NAV.forEach((item) => {
-						item.classList.remove("bg-dark");
-					});
-				}
+				NAV.forEach((item) => {
+					item.classList.add("bg-dark");
+				});
+			} else {
+				NAVA.forEach((item) => {
+					item.classList.remove("lightBlue");
+					item.classList.remove("titleScrolled");
+				});
+				NAV.forEach((item) => {
+					item.classList.remove("bg-dark");
+				});
 			}
+			// }
 		});
 	});
 

@@ -95,6 +95,11 @@ p {
   display: inline-block;
 }
 
+.titleScrolled::before {
+  content: " ";
+  border: 2px dotted #eefbfb;
+}
+
 /**********************
 *****NAV**********
 **********************/
@@ -276,5 +281,8 @@ footer p {
   }
   #portfolio .container {
     margin-bottom: 60px;
+  }
+  .fa-chevron-up {
+    right: 10%;
   }
 }
