@@ -15,20 +15,6 @@
 		<meta property="og:image" content="images/photo.jpg" />
 		<meta property="og:description" content="Portfolio de Julien MARTIN développeur Web" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYCP7TSL7Z"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-KYCP7TSL7Z");
-		</script>
-
-		<script src="https://kit.fontawesome.com/6b6014b051.js" crossorigin="anonymous"></script>
-
 		<!--icons-->
 		<link rel="stylesheet" href="font/bootstrap-icons.css" />
 		<link rel="stylesheet" href="assets/fontawesome/css/all.css" />
@@ -48,31 +34,54 @@
 		<link rel="stylesheet" href="css/glitch.css" type="text/css" />
 
 		<!-- <script src="assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script> -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
 
 		<!-- <script src="js/main.js"></script> -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYCP7TSL7Z"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-KYCP7TSL7Z");
+		</script>
+
+		<script src="https://kit.fontawesome.com/6b6014b051.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body id="main" class="bg-light">
-		<nav class="">
-			<div class="container d-flex justify-content-evenly align-items-center mt-2">
-				<a class="title" href="#portfolio">Projets</a>
-				<a class="title" href="#experience">Expérience</a>
-				<a class="title" href="#contact">Contact</a>
+		<nav>
+			<div class="container">
+				<div class="d-flex justify-content-evenly mt-2">
+					<a class="title" href="#portfolio">Projets</a>
+					<a class="title" href="#experience">Expérience</a>
+					<a class="title" href="#contact">Contact</a>
+				</div>
 			</div>
 		</nav>
 
-		<h1 id="headTitle" class="text-center">Julien MARTIN</h1>
+		<h1 id="headTitle" class="text-center" data-aos="fade-down" data-aos-duration="1500">Julien MARTIN</h1>
+		<div class="">
+			<div class="text-center">
+				<a class="col-2 button mx-3" href="https://www.linkedin.com/in/julien-martin-8b484954/?locale=fr_FR" target="_blank"
+					><i class="bi bi-linkedin"></i
+				></a>
+				<a class="col-2 button mx-3" href="https://github.com/Julianomatt77" target="_blank"><i class="bi bi-github"></i></a>
+			</div>
+		</div>
 
 		<section id="presentation" class="my-3">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-1"></div>
-					<div class="col-lg-5 col-12 text-center" data-aos="fade-down-right" data-aos-duration="1500">
+					<div class="col-lg-5 col-12 text-center" data-aos="fade-right" data-aos-duration="1500">
 						<img id="julien" src="images/photo.JPG" class="rounded-pill img-fluid" alt="Julien Martin" height="300" width="300" />
 					</div>
-					<div class="col-lg-5 col-12 text-center mt-4" data-aos="fade-down-left" data-aos-duration="1500">
+					<div class="col-lg-5 col-12 text-center mt-4" data-aos="fade-up-left" data-aos-duration="1500">
 						<h2 class="mb-4 lineUp">Développeur Web Fullstack</h2>
 
 						<p>Issue du monde de l'industrie j'ai travaillé plus de 15 ans en France, Suisse et Angleterre en tant de concepteur mécanique.</p>
@@ -81,14 +90,6 @@
 							<a href="https://humanbooster.com/" target="_blank">Human Booster</a>, terminée en Juin 2022.
 						</p>
 						<p>Je suis un passionné des nouvelles technologies et le développement web.</p>
-						<div class="justify-content-center">
-							<div class="text-center row justify-content-evenly">
-								<a class="col-2 button" href="https://www.linkedin.com/in/julien-martin-8b484954/?locale=fr_FR" target="_blank"
-									><i class="bi bi-linkedin"></i
-								></a>
-								<a class="col-2 button" href="https://github.com/Julianomatt77" target="_blank"><i class="bi bi-github"></i></a>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -103,7 +104,7 @@
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
 							<div class="card bg-light text-center d-flex flex-column justify-content-between">
 								<div class="mt-2">
-									<img src="images/JM-comptesB.JPG" class="" alt="JM-comptesB" height="200" width="300" />
+									<img src="images/JM-comptesB.JPG" class="img-fluid" alt="JM-comptesB" />
 								</div>
 								<div class="">
 									<h5 class="card-title">JM-comptesB</h5>
@@ -118,7 +119,7 @@
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
 							<div class="card bg-light text-center d-flex flex-column justify-content-between">
 								<div class="mt-2">
-									<img src="images/chien.png" class="" alt="La Nîmes'Alerie" height="200" width="200" />
+									<img src="images/BC.jpg" class="img-fluid" alt="La Nîmes'Alerie" />
 								</div>
 								<div class="">
 									<h5 class="card-title">La Nîmes'Alerie</h5>
@@ -140,7 +141,7 @@
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
 							<div class="card bg-light text-center d-flex flex-column justify-content-between">
 								<div class="mt-2">
-									<img src="images/medecine-chinoise.png" class="" alt="Exam web statique" height="200" width="200" />
+									<img src="images/medecine_chinoise.jpg" class="img-fluid" alt="Exam web statique" />
 								</div>
 								<div class="">
 									<h5 class="card-title">Médecine chinoise</h5>
@@ -161,9 +162,9 @@
 			<div class="container">
 				<h2 class="text-center mb-4">Expérience Professionnelle</h2>
 
-				<div class="row justify-content-center step" data-aos="fade-up" data-aos-duration="1500">
+				<div class="row justify-content-center step">
 					<div class="col-lg-3">
-						<p>Depuis Août 2022</p>
+						<p class="text-start">Depuis Août 2022</p>
 					</div>
 
 					<div class="col-lg-9">
@@ -172,9 +173,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="row justify-content-center step" data-aos="fade-up" data-aos-duration="1500">
+				<div class="row justify-content-center step">
 					<div class="col-lg-3">
-						<p>Juillet 2022 à Août 2022</p>
+						<p class="text-start">Juillet 2022 à Août 2022</p>
 					</div>
 
 					<div class="col-lg-9">
@@ -184,9 +185,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="row justify-content-center step" data-aos="fade-up" data-aos-duration="1500">
+				<div class="row justify-content-center step">
 					<div class="col-lg-3">
-						<p>Avril 2022 à Juin 2022</p>
+						<p class="text-start">Avril 2022 à Juin 2022</p>
 					</div>
 
 					<div class="col-lg-9">
@@ -198,9 +199,9 @@
 					</div>
 				</div>
 
-				<div class="row justify-content-center step" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+				<div class="row justify-content-center step">
 					<div class="col-lg-3">
-						<p>Septembre 2021 à Juin 2022</p>
+						<p class="text-start">Septembre 2021 à Juin 2022</p>
 					</div>
 
 					<div class="col-lg-9">
@@ -212,9 +213,9 @@
 					</div>
 				</div>
 
-				<div class="row justify-content-center step" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="200">
+				<div class="row justify-content-center step">
 					<div class="col-lg-3">
-						<p>Décembre 2005 à mars 2021</p>
+						<p class="text-start">Décembre 2005 à mars 2021</p>
 					</div>
 
 					<div class="col-lg-9">
