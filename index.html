@@ -47,56 +47,24 @@
 		<link rel="stylesheet" href="css/glitch.css" type="text/css" />
 	</head>
 
-	<body id="main">
-		<nav class="navbar navbar-expand-md navbar-light align-items-center fixed-top">
+	<body id="main" class="bg-light">
+		<nav class="navbar navbar-expand navbar-light align-items-center fixed-top">
 			<div class="container-fluid align-items-center">
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<span id="burgerMenu" class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul id="navList" class="navbar-nav w-100 text-center d-flex">
-						<li class="nav-item">
-							<a class="nav-link title" aria-current="page" href="#headTitle">Hello</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link title" href="#portfolio">Projets</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link title" href="#competences">Compétences</a>
-						</li>
-						<li class="nav-item">
-							<a id="experienceNav" class="nav-link title" href="#experience">Expérience</a>
-						</li>
-						<li class="nav-item">
-							<a id="contactNav" class="nav-link title" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
+				<ul id="navList" class="navbar-nav w-100 d-flex justify-content-evenly">
+					<li class="nav-item">
+						<a class="nav-link title" href="#portfolio">Projets</a>
+					</li>
+					<li class="nav-item">
+						<a id="experienceNav" class="nav-link title" href="#experience">Expérience</a>
+					</li>
+					<li class="nav-item">
+						<a id="contactNav" class="nav-link title" href="#contact">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 
-		<h1 id="headTitle">
-			<svg width="100%" height="100%">
-				<defs>
-					<style>
-						@import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
-					</style>
-				</defs>
-
-				<rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"></rect>
-
-				<text x="50%" y="60%" text-anchor="middle">Julien MARTIN</text>
-			</svg>
-		</h1>
+		<h1 id="headTitle" class="text-center">Julien MARTIN</h1>
 
 		<section id="presentation" class="my-3">
 			<div class="container">
@@ -111,7 +79,7 @@
 						<p>Issue du monde de l'industrie j'ai travaillé plus de 15 ans en France, Suisse et Angleterre en tant de concepteur mécanique.</p>
 						<p>
 							Je suis dorénavant développeur Fullstack suite à une reconversion professionnel, au sein de l'organisme
-							<a href="https://humanbooster.com/" target="_blank" class="hb">Human Booster</a>, terminée en Juin 2022.
+							<a href="https://humanbooster.com/" target="_blank">Human Booster</a>, terminée en Juin 2022.
 						</p>
 						<p>Je suis un passionné des nouvelles technologies et le développement web.</p>
 						<div class="justify-content-center">
@@ -130,140 +98,58 @@
 		<section id="portfolio">
 			<div class="container">
 				<div>
-					<h2 class="text-center mb-4 blink">Projets</h2>
+					<h2 class="text-center mb-4">Projets</h2>
 
-					<div class="row my-5 align-items-center" data-aos="fade-left" data-aos-duration="1500">
-						<!--JM-comptesB-->
-						<div class="col-lg-6 pt-1">
-							<h3 class="text-center py-2">
-								<a href="http://jm-comptesb.martin-julien-dev.fr/" target="_blank" class="button">JM-comptesB</a>
-							</h3>
-							<p>Application web permettant de gérer ses comptes bancaires et comptes épargne.</p>
-							<p>Les technologies utilisées sont: HTML 5, CSS 3, bootstrap 5, Angular 14, NodeJs, Express.js, MongoDb.</p>
-							<div class="row justify-content-center">
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/html.png" alt="HTML 5" height="50" width="70" />
+					<div class="row my-5">
+						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
+							<div class="card bg-light text-center d-flex flex-column justify-content-between">
+								<div class="mt-2">
+									<img src="images/JM-comptesB.JPG" class="" alt="JM-comptesB" height="200" width="300" />
 								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/css.png" alt="CSS 3" height="50" width="70" />
+								<div class="">
+									<h5 class="card-title">JM-comptesB</h5>
+									<p>Application web permettant de gérer ses comptes bancaires et comptes épargne.</p>
+									<p>Les technologies utilisées sont: HTML 5, CSS 3, bootstrap 5, Angular 14, NodeJs, Express.js, MongoDb.</p>
 								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/bootstrap.png" alt="Bootstrap" height="50" width="70" />
-								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/mongodb.png" alt="Express" height="50" width="70" />
-								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/express.png" alt="Express" height="50" width="70" />
-								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/angular.png" alt="angular" height="50" width="70" />
-								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/nodejs.png" alt="NodeJs" height="50" width="70" />
+								<div class="mb-3">
+									<a href="http://jm-comptesb.martin-julien-dev.fr/" target="_blank" class="btn btn-primary">Voir le site</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 text-center">
-							<a href="http://jm-comptesb.martin-julien-dev.fr/" target="_blank"
-								><img src="images/JM-comptesB.JPG" class="rounded-pill img-fluid" alt="JM-comptesB" height="200" width="300"
-							/></a>
-						</div>
-					</div>
-
-					<div class="row my-5 align-items-center" data-aos="fade-right" data-aos-duration="1500">
-						<!--La Nîmes'alerie-->
-						<div class="col-lg-4 text-center">
-							<h3>
-								<a href="https://bc-symfony.herokuapp.com/" target="_blank"
-									><img src="images/chien.png" class="rounded-pill img-fluid" alt="La Nîmes'Alerie" height="200" width="200"
-								/></a>
-							</h3>
-						</div>
-						<div class="col-lg-6">
-							<h3 class="text-center py-2">
-								<a href="https://bc-symfony.herokuapp.com/" target="_blank" class="button">La Nîmes'Alerie</a>
-							</h3>
-							<p>
-								Site de e-commerce sur le thème d'une animalerie réalisé en tant que Business Case durant ma formation de Developpeur Web & Web
-								Mobile.
-							</p>
-							<p>
-								Les technologies utilisées sont: HTML 5, CSS 3, SASS, javascript, et bootstrap 5 pour le front-end, PHP, Symfony, MySQL pour le
-								back-end, Angular 13 pour le dashboard administrateur.
-							</p>
-							<div class="row">
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/html.png" alt="HTML 5" height="50" width="70" />
+						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
+							<div class="card bg-light text-center d-flex flex-column justify-content-between">
+								<div class="mt-2">
+									<img src="images/chien.png" class="" alt="La Nîmes'Alerie" height="200" width="200" />
 								</div>
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/css.png" alt="CSS 3" height="50" width="70" />
+								<div class="">
+									<h5 class="card-title">La Nîmes'Alerie</h5>
+									<p>
+										Site de e-commerce sur le thème d'une animalerie réalisé en tant que Business Case durant ma formation de Developpeur Web & Web
+										Mobile.
+									</p>
+									<p>
+										Les technologies utilisées sont: HTML 5, CSS 3, SASS, javascript, et bootstrap 5 pour le front-end.<br />
+										PHP, Symfony, MySQL pour le back-end.<br />
+										Angular 13 pour le dashboard administrateur.
+									</p>
 								</div>
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/bootstrap.png" alt="Bootstrap" height="50" width="70" />
-								</div>
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/symfony.png" alt="Symfony" height="50" width="70" />
-								</div>
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/mysql.png" alt="MySQL" height="50" width="70" />
-								</div>
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/angular.png" alt="Angular" height="60" width="80" />
-								</div>
-								<div class="col-3">
-									<img class="logo me-2 mb-3" src="logos/php.png" alt="PHP" height="50" width="70" />
+								<div class="mb-3">
+									<a href="https://bc-symfony.herokuapp.com/" target="_blank" class="btn btn-primary">Voir le site</a>
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="row my-5 align-items-center" data-aos="fade-left" data-aos-duration="1500">
-						<!--Medecine chinoise-->
-						<div class="col-lg-6 pt-1">
-							<h3 class="text-center py-2">
-								<a href="http://medecine-chinoise.martin-julien-dev.fr/" target="_blank" class="button">Médecine chinoise</a>
-							</h3>
-							<p>Page d'accueil effectuée lors de l'examen de web statique durant ma formation de Developpeur Web & Web Mobile.</p>
-							<p>Les technologies utilisées sont: HTML 5, CSS 3 et bootstrap 5.</p>
-							<div class="row justify-content-center">
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/html.png" alt="HTML 5" height="50" width="70" />
+						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
+							<div class="card bg-light text-center d-flex flex-column justify-content-between">
+								<div class="mt-2">
+									<img src="images/medecine-chinoise.png" class="" alt="Exam web statique" height="200" width="200" />
 								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/css.png" alt="CSS 3" height="50" width="70" />
+								<div class="">
+									<h5 class="card-title">Médecine chinoise</h5>
+									<p>Page d'accueil effectuée lors de l'examen de web statique durant ma formation de Developpeur Web & Web Mobile.</p>
+									<p>Les technologies utilisées sont: HTML 5, CSS 3 et bootstrap 5.</p>
 								</div>
-								<div class="col-3 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/bootstrap.png" alt="Bootstrap" height="50" width="70" />
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 text-center">
-							<a href="http://medecine-chinoise.martin-julien-dev.fr/" target="_blank"
-								><img src="images/medecine-chinoise.png" class="rounded-pill img-fluid" alt="Exam web statique" height="200" width="200"
-							/></a>
-						</div>
-					</div>
-
-					<div class="row mt-5 align-items-center" data-aos="fade-right" data-aos-duration="1500">
-						<!--CV-->
-						<div class="col-lg-4 text-center">
-							<a href="https://julienmartin.netlify.app/" target="_blank"
-								><img src="images/photo.JPG" class="rounded-pill img-fluid" alt="Mon CV" height="200" width="200"
-							/></a>
-						</div>
-						<div class="col-lg-6 pt-3">
-							<h3 class="text-center py-2">
-								<a href="https://julienmartin.netlify.app//" target="_blank" class="button">Mon cv en ligne</a>
-							</h3>
-							<p>Mes toutes premières lignes de code : mon CV en ligne.</p>
-							<p>Les technologies utilisées sont: HTML 5, CSS 3.</p>
-							<div class="row justify-content-center">
-								<div class="col-lg-3 col-6 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/html.png" alt="HTML 5" height="50" width="70" />
-								</div>
-								<div class="col-lg-3 col-6 d-flex justify-content-center">
-									<img class="logo me-2 mb-3" src="logos/css.png" alt="CSS 3" height="50" width="70" />
+								<div class="mb-3">
+									<a href="http://medecine-chinoise.martin-julien-dev.fr/" target="_blank" class="btn btn-primary">Voir le site</a>
 								</div>
 							</div>
 						</div>
@@ -272,14 +158,73 @@
 			</div>
 		</section>
 
+		<section id="experience">
+			<div class="container">
+				<h2 class="text-center mb-4">Expérience Professionnelle</h2>
+
+				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500">
+					<div class="col-lg-4 col-6">
+						<p>Juillet 2022 à Août 2022 :</p>
+					</div>
+
+					<div class="col-lg-8 col-6">
+						<p class="text-start">
+							Développeur Full-Stack Développement d'une application web permettant de gérer ses comptes bancaires et comptes épargne à l'aide du
+							stack MEAN (MongoDb, ExpressJs, Angular, NodeJs)
+						</p>
+					</div>
+				</div>
+				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500">
+					<div class="col-lg-4 col-6">
+						<p>Avril 2022 à Juin 2022 :</p>
+					</div>
+
+					<div class="col-lg-8 col-6">
+						<p class="text-start">
+							Développeur Full-Stack chez
+							<a href="https://www.sumseo.com/" target="_blank">Sumseo.</a><br />
+							Développement d'une application de marketing digital (Semwee) à l'aide du stack MEAN (MongoDb, ExpressJs, Angular, NodeJs)
+						</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
+					<div class="col-lg-4 col-6">
+						<p>Septembre 2021 à Juin 2022 :</p>
+					</div>
+
+					<div class="col-lg-8 col-6">
+						<p class="text-start">
+							Formation de développeur Web et Web Mobile chez
+							<a href="https://humanbooster.com/" target="_blank">Human Booster.</a><br />
+							Titre Professionnel RNCP de niveau 5 (niveau bac+2).
+						</p>
+					</div>
+				</div>
+
+				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
+					<div class="col-lg-4 col-6">
+						<p>Décembre 2005 à mars 2021 :</p>
+					</div>
+
+					<div class="col-lg-8 col-6">
+						<p class="text-start">
+							Diverses expériences en conception mécanique, principalement dans l'Aéronautique.<br />6 ans d'expérience en Suisse (Basel), et 5 ans en
+							Angleterre (Cambridge).
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<section id="competences">
 			<div class="container text-center">
-				<h2 class="mb-4 blink">Compétences / Technologies</h2>
+				<h2 class="mb-4">Compétences / Technologies</h2>
 				<div class="text-center">
 					<div class="row">
 						<!-- Frontend -->
 						<div class="col-3" data-aos="fade-down-right" data-aos-duration="1500">
-							<h3 class="button">Front-end</h3>
+							<h3>Front-end</h3>
 							<div class="row justify-content-center mb-4">
 								<div class="col-lg-4 mb-4">
 									<img class="logo me-2 mb-3" src="logos/html.png" alt="html5" height="50" width="70" />
@@ -334,7 +279,7 @@
 
 						<!-- CMS -->
 						<div class="col-3" data-aos="flip-right" data-aos-duration="1500">
-							<h3 class="button">CMS</h3>
+							<h3>CMS</h3>
 							<div class="row justify-content-center mb-4">
 								<div class="col-lg-4">
 									<img class="logo me-2 mb-3" src="logos/wp.png" alt="Wordpress" height="50" width="70" />
@@ -345,7 +290,7 @@
 
 						<!-- Backend -->
 						<div class="col-3" data-aos="flip-left" data-aos-duration="1500">
-							<h3 class="button">Back-end</h3>
+							<h3>Back-end</h3>
 							<div class="row justify-content-center mb-4">
 								<div class="col-lg-4">
 									<img class="logo me-2 mb-3" src="logos/php.png" alt="PHP" height="50" width="70" />
@@ -381,7 +326,7 @@
 
 						<!-- Versionning -->
 						<div class="col-3" data-aos="fade-up-left" data-aos-duration="1500">
-							<h3 class="button">Divers</h3>
+							<h3>Divers</h3>
 							<div class="row justify-content-center mb-4">
 								<div class="col-lg-4">
 									<img class="logo me-2 mb-3" src="logos/github.png" alt="GitHub" height="50" width="70" />
@@ -392,7 +337,7 @@
 					</div>
 
 					<div class="justify-content-center mt-5" data-aos="flip-up" data-aos-duration="1500">
-						<h3 class="button">Langues</h3>
+						<h3>Langues</h3>
 						<div class="row justify-content-center mb-4">
 							<div class="col-lg-4">
 								<img class="logo me-2" src="logos/uk.png" alt="UK flag" height="50" width="70" />
@@ -409,124 +354,11 @@
 			</div>
 		</section>
 
-		<section id="experience">
-			<div class="container">
-				<h2 class="text-center mb-4 blink">Expérience Professionnelle</h2>
-
-				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500">
-					<div class="col-lg-4 col-6">
-						<p>Juillet 2022 à Août 2022 :</p>
-					</div>
-
-					<div class="col-lg-8 col-6">
-						<p class="text-start">
-							Développeur Full-Stack Développement d'une application web permettant de gérer ses comptes bancaires et comptes épargne à l'aide du
-							stack MEAN (MongoDb, ExpressJs, Angular, NodeJs)
-						</p>
-						<div class="row">
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/mongodb.png" alt="Express" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/express.png" alt="Express" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/angular.png" alt="angular" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/nodejs.png" alt="NodeJs" height="50" width="70" />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500">
-					<div class="col-lg-4 col-6">
-						<p>Avril 2022 à Juin 2022 :</p>
-					</div>
-
-					<div class="col-lg-8 col-6">
-						<p class="text-start">
-							Développeur Full-Stack chez
-							<a href="https://www.sumseo.com/" target="_blank">Sumseo.</a><br />
-							Développement d'une application de marketing digital (Semwee) à l'aide du stack MEAN (MongoDb, ExpressJs, Angular, NodeJs)
-						</p>
-						<div class="row">
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/mongodb.png" alt="Express" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/express.png" alt="Express" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/angular.png" alt="angular" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/nodejs.png" alt="NodeJs" height="50" width="70" />
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
-					<div class="col-lg-4 col-6">
-						<p>Septembre 2021 à Juin 2022 :</p>
-					</div>
-
-					<div class="col-lg-8 col-6">
-						<p class="text-start">
-							Formation de développeur Web et Web Mobile chez
-							<a href="https://humanbooster.com/" target="_blank">Human Booster.</a><br />
-							Titre Professionnel RNCP de niveau 5 (niveau bac+2).
-						</p>
-						<div class="row">
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/html.png" alt="HTML 5" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/css.png" alt="CSS 3" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/bootstrap.png" alt="Bootstrap" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/angular.png" alt="Angular" height="60" width="80" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/symfony.png" alt="Symfony" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/mysql.png" alt="MySQL" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/php.png" alt="PHP" height="50" width="70" />
-							</div>
-							<div class="col-lg-3 col-6">
-								<img class="logo me-2 mb-3" src="logos/wp.png" alt="Wordpress" height="50" width="70" />
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row justify-content-center step" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200">
-					<div class="col-lg-4 col-6">
-						<p>Décembre 2005 à mars 2021 :</p>
-					</div>
-
-					<div class="col-lg-8 col-6">
-						<p class="text-start">
-							Diverses expériences en conception mécanique, principalement dans l'Aéronautique.<br />6 ans d'expérience en Suisse (Basel), et 5 ans en
-							Angleterre (Cambridge).
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section id="contact">
 			<div class="container text-center">
-				<h2 class="mb-4 blink">Contact</h2>
+				<h2 class="mb-4">Contact</h2>
 				<div data-aos="zoom-in" data-aos-duration="1500">
-					<a href="mailto: ju.martin@outlook.com" target="_blank" class="button">ju.martin@outlook.com</a>
+					<a href="mailto: ju.martin@outlook.com" target="_blank">ju.martin@outlook.com</a>
 				</div>
 			</div>
 		</section>

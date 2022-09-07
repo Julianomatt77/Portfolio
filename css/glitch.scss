@@ -12,7 +12,7 @@ $orangeCustom: #ff875d;
 	top: 0;
 }
 .button {
-	background: $darkBlue;
+	background: $lightBlue;
 	background-size: 100%;
 	-moz-border-radius: 1.5em;
 	-webkit-border-radius: 1.5em;
@@ -23,7 +23,7 @@ $orangeCustom: #ff875d;
 	transition: opacity 300ms;
 	border: none;
 	padding: 10px;
-	color: $orangeCustom;
+	color: $darkBlue;
 	font-weight: bold;
 	letter-spacing: 0.05em;
 	outline: none;
@@ -36,7 +36,7 @@ $orangeCustom: #ff875d;
 	-moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
 	-webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
 	box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
-	background: $orangeCustom;
+	background: $darkBlue;
 	content: "";
 	height: 2px;
 	opacity: 0;
@@ -161,146 +161,5 @@ $orangeCustom: #ff875d;
 	}
 	100% {
 		top: 0%;
-	}
-}
-
-a:link,
-a:visited {
-	color: white;
-	text-decoration: none;
-}
-
-/*************************** STROKE *************************/
-svg text {
-	// font-family: Lora;
-	// letter-spacing: 10px;
-	stroke: $orangeCustom;
-	font-size: 2rem;
-	// font-weight: 700;
-	stroke-width: 3;
-
-	animation: textAnimate 5s infinite alternate;
-}
-
-@keyframes textAnimate {
-	0% {
-		stroke-dasharray: 0 50%;
-		stroke-dashoffset: 20%;
-		// fill: hsl(189, 68%, 75%);
-		fill: $lightBlue;
-	}
-
-	100% {
-		stroke-dasharray: 50% 0;
-		stroke-dashoffstet: -20%;
-		fill: hsla(189, 68%, 75%, 0%);
-	}
-}
-
-/********* Blink ************/
-
-.blink {
-	text-shadow: 0 0 5px $orangeCustom, 0 0 10px $orangeCustom, 0 0 15px $orangeCustom, 0 0 20px $orangeCustom, 0 0 30px $darkBlue,
-		0 0 10px $orangeCustom, 0 0 98px $darkBlue;
-	animation: blink 2s infinite;
-	-webkit-animation: blink 4s infinite;
-}
-
-@-webkit-keyframes blink {
-	20%,
-	24%,
-	55% {
-		color: #111;
-		text-shadow: none;
-	}
-
-	0%,
-	19%,
-	21%,
-	23%,
-	25%,
-	54%,
-	56%,
-	100% {
-		text-shadow: 0 0 5px $orangeCustom, 0 0 15px $orangeCustom, 0 0 20px $orangeCustom, 0 0 40px $orangeCustom, 0 0 60px $darkBlue,
-			0 0 10px $orangeCustom, 0 0 98px $darkBlue;
-		color: $darkBlue;
-	}
-}
-
-@keyframes blink {
-	20%,
-	24%,
-	55% {
-		color: #111;
-		text-shadow: none;
-	}
-
-	0%,
-	19%,
-	21%,
-	23%,
-	25%,
-	54%,
-	56%,
-	100% {
-		text-shadow: 0 0 5px $orangeCustom, 0 0 15px $orangeCustom, 0 0 20px $orangeCustom, 0 0 40px $orangeCustom, 0 0 60px $darkBlue,
-			0 0 10px $orangeCustom, 0 0 98px $darkBlue;
-		color: $orangeCustom;
-	}
-}
-
-/***************** Nav buttons ***************/
-
-.flipY {
-	animation-name: spin, depth;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-duration: 6s;
-}
-@keyframes spin {
-	0% {
-		transform: rotateY(0deg);
-	}
-	100% {
-		transform: rotateY(-360deg);
-	}
-}
-@keyframes depth {
-	0% {
-		text-shadow: 0 0 black;
-	}
-	25% {
-		text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
-	}
-	50% {
-		text-shadow: 0 0 black;
-	}
-	75% {
-		text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
-	}
-	100% {
-		text-shadow: 0 0 black;
-	}
-}
-
-.lineUp {
-	animation: 2s anim-lineUp ease-out 1;
-}
-@keyframes anim-lineUp {
-	0% {
-		opacity: 0;
-		transform: translateY(80%);
-	}
-	20% {
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0%);
 	}
 }

@@ -1,18 +1,18 @@
 /**********************************/
 /*********General*********/
 /**********************************/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Poppins";
+  src: url("/font/poppins/Poppins-Regular.ttf") format("ttf");
+  src: url("/font/poppins/Poppins-Bold.ttf") format("ttf");
+  font-display: swap;
+}
 .darkBlue {
   color: #202b67 !important;
 }
 
 .lightBlue {
   color: #eefbfb !important;
-}
-
-.orangeFont {
-  color: #ff875d !important;
 }
 
 .bg-dark {
@@ -23,21 +23,18 @@
   background: #eefbfb !important;
 }
 
-.bg-orange {
-  background: #ff875d !important;
-}
-
 * {
-  font-family: "Roboto", sans-serif;
-  color: #ff875d !important;
-  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #202b67;
 }
 
-h1,
-h2 {
-  font-family: "Dancing Script", cursive;
+h1 {
   font-weight: bold;
-  color: #ff875d;
+  font-size: 3rem;
+}
+
+h2 {
+  font-weight: bold;
   padding: 5px 0px;
   font-size: 2rem;
 }
@@ -45,6 +42,7 @@ h2 {
 h3 a {
   font-size: 1.4rem;
   text-align: center;
+  color: #202b67;
 }
 
 h1 text {
@@ -57,13 +55,8 @@ a {
 
 p {
   padding: 0px 20px;
-  text-align: justify;
+  text-align: start;
   font-size: 1rem;
-}
-
-body {
-  background: linear-gradient(33deg, #202b67 0%, #202b67 87%, #ff875d 94%) !important;
-  height: 100%;
 }
 
 #headTitle {
@@ -89,7 +82,7 @@ body {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  border: 2px dotted #eefbfb;
+  border: 2px dotted #202b67;
   margin: 0px -10px 0px -10px;
   border-radius: 15px;
   z-index: -1;
@@ -105,42 +98,12 @@ body {
 /**********************
 *****NAV**********
 **********************/
-nav ul li {
-  width: 20%;
-}
-
-.navbar-toggler {
-  color: #ff875d !important;
-  border: #ff875d !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 135, 93, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-
-.navbar-toggler-iconBlue {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(32, 43, 103, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-}
-
-#experienceNav,
-#contactNav {
-  color: #202b67 !important;
-}
-
 /**********************
 ***** PRESENTATION ***
 **********************/
 #presentation .container {
   margin-top: 50px;
   margin-bottom: 150px;
-}
-
-.btn {
-  background-color: #ff875d;
-  color: #202b67 !important;
-  height: 100px;
-  width: 300px;
-  font-size: 1.5rem;
 }
 
 .bi-linkedin {
@@ -152,13 +115,9 @@ nav ul li {
 }
 
 #julien {
-  border: solid 14px #ff875d !important;
+  border: solid 14px #202b67 !important;
   border-radius: 50% !important;
   box-shadow: 3px 8px 10px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hb {
-  text-decoration: underline !important;
 }
 
 /**********************
@@ -170,6 +129,21 @@ nav ul li {
 
 #portfolio .container {
   margin-bottom: 150px;
+}
+
+.card {
+  height: 600px !important;
+  border-radius: 1rem !important;
+}
+
+.btn {
+  border-radius: 1rem;
+}
+
+.btn-primary {
+  color: #eefbfb;
+  background-color: #202b67;
+  border-color: #202b67;
 }
 
 /**********************
@@ -222,7 +196,7 @@ nav ul li {
   content: "";
   height: calc(100% + 20px);
   width: 5px;
-  background: #ff875d;
+  background: #202b67;
   position: absolute;
   top: -10px;
   left: -20px;
@@ -233,7 +207,7 @@ nav ul li {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background: #ff875d;
+  background: #202b67;
   position: absolute;
   top: -10px;
   left: -25px;
@@ -256,10 +230,15 @@ footer p {
 ***** COOKIE BANNER ***
 **********************/
 .cookiebanner {
-  border: 1px solid #ff875d;
+  border: 1px solid #202b67;
   padding: 10px 10px 5px 0px !important;
   margin: 0px 10px 0px 10px !important;
   background-color: #202b67 !important;
+}
+
+.cookiebanner span,
+.cookiebanner div {
+  color: #eefbfb;
 }
 
 /**************
@@ -269,66 +248,33 @@ footer p {
   position: fixed;
   top: 90%;
   right: 3%;
-  border: 3px solid #ff875d !important;
+  border: 3px solid #202b67 !important;
 }
 
 /************************************/
 /* Responsive */
 /**********************************/
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-  body {
-    background: linear-gradient(45deg, #202b67 0%, #202b67 90%, #ff875d 95%) !important;
-  }
-
-  nav ul li {
-    height: 50px;
-  }
-  nav ul li a {
-    font-size: 0.9rem;
-    margin-top: 5px;
-  }
-}
 @media screen and (max-width: 1000px) {
   h3 {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 768px) {
-  body {
-    background: linear-gradient(40deg, #202b67 0%, #202b67 96%, #ff875d 99%) !important;
-  }
-
-  nav {
-    background-color: transparent;
-  }
-
-  nav ul li {
-    height: 55px;
-    background-color: #ff875d;
-    width: 40%;
-    border: 1px dotted #202b67;
-  }
-  nav ul a {
-    font-size: 1rem;
-    color: #202b67 !important;
-    margin-top: 0px !important;
-    padding-top: 15px !important;
-  }
-
   #headTitle {
-    margin-top: 10px;
+    margin-top: 80px;
   }
-
   #julien {
     height: 150px;
     width: 150px;
   }
-
-  #presentation .container {
-    margin-top: 0px;
-  }
-
   h1 text {
     font-size: 2em !important;
+  }
+  #presentation .container {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  #portfolio .container {
+    margin-bottom: 60px;
   }
 }

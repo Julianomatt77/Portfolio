@@ -9,7 +9,7 @@
 }
 
 .button {
-  background: #202b67;
+  background: #eefbfb;
   background-size: 100%;
   -moz-border-radius: 1.5em;
   -webkit-border-radius: 1.5em;
@@ -20,7 +20,7 @@
   transition: opacity 300ms;
   border: none;
   padding: 10px;
-  color: #ff875d;
+  color: #202b67;
   font-weight: bold;
   letter-spacing: 0.05em;
   outline: none;
@@ -34,7 +34,7 @@
   -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
   -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
   box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
-  background: #ff875d;
+  background: #202b67;
   content: "";
   height: 2px;
   opacity: 0;
@@ -163,112 +163,5 @@
   }
   100% {
     top: 0%;
-  }
-}
-a:link,
-a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-/*************************** STROKE *************************/
-svg text {
-  stroke: #ff875d;
-  font-size: 2rem;
-  stroke-width: 3;
-  animation: textAnimate 5s infinite alternate;
-}
-
-@keyframes textAnimate {
-  0% {
-    stroke-dasharray: 0 50%;
-    stroke-dashoffset: 20%;
-    fill: #eefbfb;
-  }
-  100% {
-    stroke-dasharray: 50% 0;
-    stroke-dashoffstet: -20%;
-    fill: hsla(189deg, 68%, 75%, 0);
-  }
-}
-/********* Blink ************/
-.blink {
-  text-shadow: 0 0 5px #ff875d, 0 0 10px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 30px #202b67, 0 0 10px #ff875d, 0 0 98px #202b67;
-  animation: blink 2s infinite;
-  -webkit-animation: blink 4s infinite;
-}
-
-@-webkit-keyframes blink {
-  20%, 24%, 55% {
-    color: #111;
-    text-shadow: none;
-  }
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 0 0 5px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 40px #ff875d, 0 0 60px #202b67, 0 0 10px #ff875d, 0 0 98px #202b67;
-    color: #202b67;
-  }
-}
-@keyframes blink {
-  20%, 24%, 55% {
-    color: #111;
-    text-shadow: none;
-  }
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 0 0 5px #ff875d, 0 0 15px #ff875d, 0 0 20px #ff875d, 0 0 40px #ff875d, 0 0 60px #202b67, 0 0 10px #ff875d, 0 0 98px #202b67;
-    color: #ff875d;
-  }
-}
-/***************** Nav buttons ***************/
-.flipY {
-  animation-name: spin, depth;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(-360deg);
-  }
-}
-@keyframes depth {
-  0% {
-    text-shadow: 0 0 black;
-  }
-  25% {
-    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
-  }
-  50% {
-    text-shadow: 0 0 black;
-  }
-  75% {
-    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
-  }
-  100% {
-    text-shadow: 0 0 black;
-  }
-}
-.lineUp {
-  animation: 2s anim-lineUp ease-out 1;
-}
-
-@keyframes anim-lineUp {
-  0% {
-    opacity: 0;
-    transform: translateY(80%);
-  }
-  20% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0%);
   }
 }
