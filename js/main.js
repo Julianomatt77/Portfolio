@@ -16,31 +16,31 @@ const events = ["resize", "scroll"];
 document.addEventListener("DOMContentLoaded", function () {
 	//Change bg color while scrolling
 
-	// events.forEach((evt) => {
-	// 	window.addEventListener(evt, function () {
-	// 		let screenWidth = document.documentElement.clientWidth;
-	// 		console.log(screenWidth);
-	// 		let scrollpos = window.scrollY;
-	// 		if (screenWidth > 767) {
-	// 			if (scrollpos > 250) {
-	// 				NAVA.forEach((item) => {
-	// 					item.classList.add("darkBlue");
-	// 				});
+	events.forEach((evt) => {
+		window.addEventListener(evt, function () {
+			let screenWidth = document.documentElement.clientWidth;
+			console.log(screenWidth);
+			let scrollpos = window.scrollY;
+			if (screenWidth > 767) {
+				if (scrollpos > 250) {
+					NAVA.forEach((item) => {
+						item.classList.add("lightBlue");
+					});
 
-	// 				NAV.forEach((item) => {
-	// 					item.classList.add("bg-orange");
-	// 				});
-	// 			} else {
-	// 				NAVA.forEach((item) => {
-	// 					item.classList.remove("darkBlue");
-	// 				});
-	// 				NAV.forEach((item) => {
-	// 					item.classList.remove("bg-orange");
-	// 				});
-	// 			}
-	// 		}
-	// 	});
-	// });
+					NAV.forEach((item) => {
+						item.classList.add("bg-dark");
+					});
+				} else {
+					NAVA.forEach((item) => {
+						item.classList.remove("ligghtBlue");
+					});
+					NAV.forEach((item) => {
+						item.classList.remove("bg-dark");
+					});
+				}
+			}
+		});
+	});
 
 	AOS.init();
 });
