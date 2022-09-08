@@ -129,7 +129,7 @@ nav {
 }
 
 /**********************
-***** PORTFOLIO ***
+***** PROJETS ***
 **********************/
 #portfolio {
   overflow: hidden;
@@ -145,7 +145,8 @@ nav {
 
 .card {
   height: 600px !important;
-  border-radius: 1rem !important;
+  box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none !important;
 }
 
 .btn {
@@ -182,6 +183,22 @@ nav {
 .logo {
   height: 50px;
   width: 70px;
+}
+
+.badge {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+.badge:empty {
+  display: none;
+}
+
+.btn .badge {
+  position: relative;
+  top: -1px;
 }
 
 /**********************

@@ -13,6 +13,28 @@ const a =
 
 const events = ["resize", "scroll"];
 
+// Function to change the background of the navbar depending of the postion of the screen
+function addNavBackground(scrollpos, scrollNumber) {
+	if (scrollpos > scrollNumber) {
+		NAVA.forEach((item) => {
+			item.classList.add("lightBlue");
+			item.classList.add("titleScrolled");
+		});
+
+		NAV.forEach((item) => {
+			item.classList.add("bg-dark");
+		});
+	} else {
+		NAVA.forEach((item) => {
+			item.classList.remove("lightBlue");
+			item.classList.remove("titleScrolled");
+		});
+		NAV.forEach((item) => {
+			item.classList.remove("bg-dark");
+		});
+	}
+}
+
 document.addEventListener("DOMContentLoaded", function () {
 	//Change bg color while scrolling
 
@@ -22,26 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			let scrollpos = window.scrollY;
 			// console.log(scrollpos);
 			// console.log(screenWidth);
-			// if (screenWidth > 767) {
-			if (scrollpos > 250) {
-				NAVA.forEach((item) => {
-					item.classList.add("lightBlue");
-					item.classList.add("titleScrolled");
-				});
-
-				NAV.forEach((item) => {
-					item.classList.add("bg-dark");
-				});
+			if (screenWidth > 767) {
+				addNavBackground(scrollpos, 130);
 			} else {
-				NAVA.forEach((item) => {
-					item.classList.remove("lightBlue");
-					item.classList.remove("titleScrolled");
-				});
-				NAV.forEach((item) => {
-					item.classList.remove("bg-dark");
-				});
+				addNavBackground(scrollpos, 60);
 			}
-			// }
 		});
 	});
 
