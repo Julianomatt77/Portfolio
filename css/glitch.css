@@ -9,7 +9,7 @@
 }
 
 .button {
-  background: #eefbfb;
+  background: #111927;
   background-size: 100%;
   -moz-border-radius: 1.5em;
   -webkit-border-radius: 1.5em;
@@ -20,7 +20,7 @@
   transition: opacity 300ms;
   border: none;
   padding: 10px;
-  color: #202b67;
+  color: #70B8FF;
   font-weight: bold;
   letter-spacing: 0.05em;
   outline: none;
@@ -34,7 +34,7 @@
   -moz-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
   -webkit-box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
   box-shadow: rgba(212, 207, 201, 0.75) 0 0 15px 2px;
-  background: #202b67;
+  background: #70B8FF;
   content: "";
   height: 2px;
   opacity: 0;

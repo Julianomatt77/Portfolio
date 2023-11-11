@@ -17,20 +17,20 @@ const events = ["resize", "scroll"];
 function addNavBackground(scrollpos, scrollNumber) {
 	if (scrollpos > scrollNumber) {
 		NAVA.forEach((item) => {
-			item.classList.add("lightBlue");
+			item.classList.add("darkBlue");
 			item.classList.add("titleScrolled");
 		});
 
 		NAV.forEach((item) => {
-			item.classList.add("bg-dark");
+			item.classList.add("bg-light");
 		});
 	} else {
 		NAVA.forEach((item) => {
-			item.classList.remove("lightBlue");
+			item.classList.remove("darkBlue");
 			item.classList.remove("titleScrolled");
 		});
 		NAV.forEach((item) => {
-			item.classList.remove("bg-dark");
+			item.classList.remove("bg-light");
 		});
 	}
 }

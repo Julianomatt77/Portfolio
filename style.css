@@ -8,24 +8,34 @@
   font-display: swap;
 }
 .darkBlue {
-  color: #202b67 !important;
+  color: #111927 !important;
 }
 
 .lightBlue {
-  color: #eefbfb !important;
+  color: #70B8FF !important;
 }
 
 .bg-dark {
-  background: #202b67 !important;
+  background: #111927 !important;
 }
 
 .bg-light {
-  background: #eefbfb !important;
+  background: #70B8FF !important;
+}
+
+.bg-card {
+  background: #003362;
+  color: #70B8FF;
+}
+
+.bg-technos {
+  background: #C2E6FF;
+  color: #003362 !important;
 }
 
 * {
   font-family: "Poppins", sans-serif;
-  color: #202b67 !important;
+  color: #70B8FF !important;
 }
 
 h1 {
@@ -42,7 +52,7 @@ h2 {
 h3 a {
   font-size: 1.4rem;
   text-align: center;
-  color: #202b67;
+  color: #113264;
 }
 
 h1 text {
@@ -82,7 +92,7 @@ p {
   bottom: 0;
   left: 0;
   inset: 0 0 0 0;
-  border: 2px dotted #202b67;
+  border: 2px dotted #70B8FF;
   margin: 0px -10px 0px -10px;
   border-radius: 15px;
   z-index: -1;
@@ -97,7 +107,7 @@ p {
 
 .titleScrolled::before {
   content: " ";
-  border: 2px dotted #eefbfb;
+  border: 2px dotted #111927;
 }
 
 /**********************
@@ -154,9 +164,13 @@ nav {
 }
 
 .btn-primary {
-  color: #eefbfb !important;
-  background-color: #202b67;
-  border-color: #202b67;
+  color: #70B8FF !important;
+  background-color: #003362;
+  border-color: #205D9E;
+}
+
+.btn:hover {
+  color: #70B8FF !important;
 }
 
 /**********************
@@ -225,7 +239,7 @@ nav {
   content: "";
   height: calc(100% + 20px);
   width: 5px;
-  background: #202b67;
+  background: #003362;
   position: absolute;
   top: -10px;
   left: -20px;
@@ -236,7 +250,7 @@ nav {
   height: 15px;
   width: 15px;
   border-radius: 50%;
-  background: #202b67;
+  background: #003362;
   position: absolute;
   top: -10px;
   left: -25px;
@@ -265,7 +279,7 @@ footer p {
   position: fixed;
   top: 90%;
   left: 5%;
-  border: 3px solid #202b67 !important;
+  border: 3px solid #205D9E !important;
 }
 
 /************************************/

@@ -8,28 +8,51 @@
 	font-display: swap;
 }
 
-$darkBlue: #202b67;
-$lightBlue: #eefbfb;
+//$darkBlue: #202b67;
+$darkBlue: #113264;
+//$lightBlue: #eefbfb;
+$lightBlue: #E6F4FE;
+
+$background: #111927;
+$text: #70B8FF; 
+$textLighter: #C2E6FF;
+$interactiveComponents: #003362;
+$border: #205D9E;
+$solid: #3B9EFF;
 
 .darkBlue {
-	color: $darkBlue !important;
+	// color: $darkBlue !important;
+	color: $background !important;
 }
 
 .lightBlue {
-	color: $lightBlue !important;
+	// color: $lightBlue !important;
+	color: $text !important;
 }
 
 .bg-dark {
-	background: $darkBlue !important;
+	// background: $darkBlue !important;
+	background: $background !important;
 }
 
 .bg-light {
-	background: $lightBlue !important;
+	background: $text !important;
+	// background: $lightBlue !important;
+}
+
+.bg-card {
+	background: $interactiveComponents;
+	color: $text;
+}
+
+.bg-technos {
+	background: $textLighter;
+	color: $interactiveComponents !important;
 }
 
 * {
 	font-family: "Poppins", sans-serif;
-	color: $darkBlue !important;
+	color: $text !important;
 }
 
 h1 {
@@ -86,7 +109,7 @@ p {
 	bottom: 0;
 	left: 0;
 	inset: 0 0 0 0;
-	border: 2px dotted $darkBlue;
+	border: 2px dotted $text;
 	margin: 0px -10px 0px -10px;
 	border-radius: 15px;
 	z-index: -1;
@@ -101,7 +124,7 @@ p {
 
 .titleScrolled::before {
 	content: " ";
-	border: 2px dotted $lightBlue;
+	border: 2px dotted $background;
 }
 
 /**********************
@@ -153,9 +176,13 @@ nav {
 	border-radius: 1rem;
 }
 .btn-primary {
-	color: $lightBlue !important;
-	background-color: $darkBlue;
-	border-color: $darkBlue;
+	color: $text !important;
+	background-color: $interactiveComponents;
+	border-color: $border;
+}
+
+.btn:hover{
+	color: $text !important;
 }
 
 /**********************
@@ -226,7 +253,7 @@ nav {
 	content: "";
 	height: calc(100% + 20px);
 	width: 5px;
-	background: $darkBlue;
+	background: $interactiveComponents;
 	position: absolute;
 	top: -10px;
 	left: -20px;
@@ -237,7 +264,7 @@ nav {
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
-	background: $darkBlue;
+	background: $interactiveComponents;
 	position: absolute;
 	top: -10px;
 	left: -25px;
@@ -269,7 +296,7 @@ footer {
 	position: fixed;
 	top: 90%;
 	left: 5%;
-	border: 3px solid $darkBlue !important;
+	border: 3px solid $border !important;
 }
 
 /************************************/
