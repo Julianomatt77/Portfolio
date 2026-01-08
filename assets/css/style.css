@@ -3,8 +3,8 @@
 /**********************************/
 @font-face {
   font-family: "Poppins";
-  src: url("/font/poppins/Poppins-Regular.ttf") format("ttf");
-  src: url("/font/poppins/Poppins-Bold.ttf") format("ttf");
+  src: url("/assets/font/poppins/Poppins-Regular.ttf") format("ttf");
+  src: url("/assets/font/poppins/Poppins-Bold.ttf") format("ttf");
   font-display: swap;
 }
 .darkBlue {
@@ -147,6 +147,28 @@ nav {
   height: 600px !important;
   box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-picture-div {
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.card-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 1rem;
+}
+
+.btn-div {
+  height: 50px;
+  flex-shrink: 0;
+  position: static;
 }
 
 .btn {
@@ -157,6 +179,11 @@ nav {
   color: #eefbfb !important;
   background-color: #202b67;
   border-color: #202b67;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
 }
 
 /**********************
@@ -278,8 +305,8 @@ footer p {
 }
 @media screen and (max-width: 768px) {
   html,
-html body,
-body {
+  html body,
+  body {
     width: 100% !important;
     min-width: 0 !important;
     max-width: none !important;

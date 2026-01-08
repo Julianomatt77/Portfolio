@@ -16,10 +16,10 @@
 		<meta property="og:image" content="https://www.martin-julien-dev.fr/images/photo.JPG" />
 		<meta property="og:description" content="Julien MARTIN développeur Web à Montpellier" />
 
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
 		<!--icons-->
-		<link rel="stylesheet" href="font/bootstrap-icons.css" />
+		<link rel="stylesheet" href="assets/font/bootstrap-icons.css" />
 		<link rel="stylesheet" href="assets/fontawesome/css/all.css" />
 
 		<!--Bootstrap css-->
@@ -32,8 +32,8 @@
 		<link href="assets/aos-master/dist/aos.css" rel="stylesheet" />
 
 		<!--css file-->
-		<link rel="stylesheet" href="style.css" type="text/css" />
-		<link rel="stylesheet" href="css/glitch.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/glitch.css" type="text/css" />
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYCP7TSL7Z"></script>
@@ -76,7 +76,7 @@
 				<div class="row align-items-center">
 					<div class="col-1"></div>
 					<div class="col-lg-5 col-12 text-center" data-aos="fade-right" data-aos-duration="1500">
-						<img id="julien" src="images/photo.JPG" class="rounded-pill img-fluid" alt="Julien Martin" height="300" width="300" />
+						<img id="julien" src="assets/images/photo.JPG" class="rounded-pill img-fluid" alt="Julien Martin" height="300" width="300" />
 					</div>
 					<div class="col-lg-5 col-12 text-center mt-4" data-aos="fade-up-left" data-aos-duration="1500">
 						<h2 class="mb-4 lineUp">Développeur Fullstack (Angular, Symfony, PHP)</h2>
@@ -96,15 +96,15 @@
 					<div class="row my-5">
 						
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
-							<div class="card bg-light text-center d-flex flex-column justify-content-between">
-								<div class="" style="max-height: 130px">
-									<img src="images/logo_demenagement_200x200.webp" class="img-fluid" alt="image mon demenagement" title="Mon déménagement" style="max-height: 200px"/>
+							<div class="card bg-light text-center">
+								<div class="card-picture-div">
+									<img src="assets/images/logo_demenagement_200x200.webp" class="img-fluid image" alt="image mon demenagement" title="Mon déménagement" height="200" width="200" />
 								</div>
-								<div class="">
-									<h5 class="card-title">Mon déménagement</h5>
+								<div class="card-content">
+									<h5 class="card-title fw-bold">Mon déménagement</h5>
 									<p>Application web permettant d'organiser votre déménagement en toute simplicité, depuis la sélection du déménageur, aux démarches administratives à effectuer, en passant par l'inventaire des cartons par pièce.</p>
 									
-									<p class="text-center">
+									<p class="text-start">
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Angular 19</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">PHP 8</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Symfony 7</span>
@@ -115,22 +115,22 @@
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Tailwind CSS</span>
 									</p>
 								</div>
-								<div class="mb-3">
+								<div class="btn-div my-3">
 									<a href="https://mondemenagement.martin-julien-dev.fr/" target="_blank" class="btn btn-lg btn-primary">Voir le site</a>
 								</div>
 							</div>
 						</div>
 						
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
-							<div class="card bg-light text-center d-flex flex-column justify-content-between">
-								<div class="" style="max-height: 130px">
-									<img src="images/logo_devisgenerator_200x200.webp" class="img-fluid" alt="image Devis Generator" title="Devis Generator" height="200" width="200" style="max-height: 200px"/>
+							<div class="card bg-light text-center">
+								<div class="card-picture-div">
+									<img src="assets/images/logo_devisgenerator_200x200.webp" class="img-fluid image" alt="image Devis Generator" title="Devis Generator" height="200" width="200"/>
 								</div>
-								<div class="">
-									<h5 class="card-title">Devis Generator</h5>
+								<div class="card-content">
+									<h5 class="card-title fw-bold">Devis Generator</h5>
 									<p>Application web permettant de créer des devis professionnels</p>
 									
-									<p class="text-center">
+									<p class="text-start">
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">React 18</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">PHP 8</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Symfony 7</span>
@@ -141,22 +141,22 @@
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Tailwind CSS</span>
 									</p>
 								</div>
-								<div class="mb-3">
+								<div class="btn-div my-3">
 									<a href="https://devisgenerator.martin-julien-dev.fr/" target="_blank" class="btn btn-lg btn-primary">Voir le site</a>
 								</div>
 							</div>
 						</div>
 						
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
-							<div class="card bg-light text-center d-flex flex-column justify-content-between">
-								<div class="" style="max-height: 130px">
-									<img src="images/moto-manager.png" class="img-fluid" alt="moto manager.png" title="moto-manager" style="max-height: 200px"/>
+							<div class="card bg-light text-center">
+								<div class="card-picture-div">
+									<img src="assets/images/moto-manager.png" class="img-fluid image" alt="moto manager.png" title="moto-manager" height="200" width="200"/>
 								</div>
-								<div class="">
-									<h5 class="card-title">Moto Manager</h5>
+								<div class="card-content">
+									<h5 class="card-title fw-bold">Moto Manager</h5>
 									<p>Application web permettant de gérer les dépenses et entretiens réguliers de sa moto</p>
 
-									<p class="text-center">
+									<p class="text-start">
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Angular 17</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">PHP 8</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Symfony 6</span>
@@ -166,7 +166,7 @@
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">CSS</span>
 									</p>
 								</div>
-								<div class="mb-3">
+								<div class="btn-div my-3">
 									<a href="https://moto-manager.martin-julien-dev.fr/" target="_blank" class="btn btn-lg btn-primary">Voir le site</a>
 								</div>
 							</div>
@@ -174,14 +174,14 @@
 
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
 							<div class="card bg-light text-center d-flex flex-column justify-content-between">
-								<div class="">
-									<img src="images/JM-comptesB.JPG" class="img-fluid" alt="JM-comptesB" />
+								<div class="card-picture-div">
+									<img src="assets/images/JM-comptesB.JPG" class="img-fluid image" alt="Compty logo" title="Compty" height="200" width="200"/>
 								</div>
-								<div class="">
-									<h5 class="card-title">Compty</h5>
+								<div class="card-content">
+									<h5 class="card-title fw-bold">Compty</h5>
 									<p>Application web permettant de gérer ses comptes bancaires et comptes épargne.</p>
 
-									<p class="text-center">
+									<p class="text-start">
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Angular 14</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">NodeJS</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">ExpressJS</span>
@@ -191,25 +191,25 @@
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Bootstrap</span>
 									</p>
 								</div>
-								<div class="mb-3">
+								<div class="btn-div my-3">
 									<a href="https://compty.martin-julien-dev.fr/" target="_blank" class="btn btn-lg btn-primary">Voir le site</a>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
-							<div class="card bg-light text-center d-flex flex-column justify-content-between">
-								<div class="">
-									<img src="images/batchy.png" class="img-fluid" alt="La Nîmes'Alerie" />
+							<div class="card bg-light text-center">
+								<div class="card-picture-div">
+									<img src="assets/images/batchy.png" class="img-fluid image" alt="Batchy screenshot" title="Batchy" height="200" width="200"/>
 								</div>
-								<div class="">
-									<h5 class="card-title">Batchy</h5>
+								<div class="card-content">
+									<h5 class="card-title fw-bold">Batchy</h5>
 									<p>
 										Application web facilitant les séances de batch cooking. Elle vous permet d'ajouter vos recettes et de faire votre liste de
 										courses. (Non maintenu)
 									</p>
 
-									<p class="text-center">
+									<p class="text-start">
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">PHP 8</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Symfony 6</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">MySQL</span>
@@ -219,25 +219,25 @@
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Bootstrap</span>
 									</p>
 								</div>
-								<div class="mb-3">
+								<div class="btn-div my-3">
 <!--									<a href="https://batchy.martin-julien-dev.fr/" target="_blank" class="btn btn-lg btn-primary">Voir le site</a>-->
 								</div>
 							</div>
 						</div>
 
 						<div class="col-lg-4 col-md-6 mx-0 px-2 my-2" data-aos="fade-up" data-aos-duration="1500">
-							<div class="card bg-light text-center d-flex flex-column justify-content-between">
-								<div class="">
-									<img src="images/BC.jpg" class="img-fluid" alt="La Nîmes'Alerie" />
+							<div class="card bg-light text-center">
+								<div class="card-picture-div">
+									<img src="assets/images/BC.jpg" class="img-fluid image" alt="La Nîmes'Alerie" title="La Nîmes'Alerie" height="200" width="200"/>
 								</div>
-								<div class="">
-									<h5 class="card-title">La Nîmes'Alerie</h5>
+								<div class="card-content">
+									<h5 class="card-title fw-bold">La Nîmes'Alerie</h5>
 									<p>
 										Site de e-commerce sur le thème d'une animalerie réalisé en tant que Business Case durant ma formation de Developpeur Web & Web
 										Mobile. (Non maintenu)
 									</p>
 
-									<p class="text-center">
+									<p class="text-start">
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">PHP 8</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Symfony 6</span>
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">MySQL</span>
@@ -249,7 +249,7 @@
 										<span class="badge bg-dark lightBlue opacity-50 mt-2 mx-2 text-start">Javascript</span>
 									</p>
 								</div>
-								<div class="mb-3">
+								<div class="btn-div my-3">
 <!--									<a href="https://nimesalerie.martin-julien-dev.fr/" target="_blank" class="btn btn-lg btn-primary">Voir le site</a>-->
 								</div>
 							</div>
@@ -428,6 +428,6 @@
 
 		<!--------  SCRIPTS ----------------->
 		<script src="assets/bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
